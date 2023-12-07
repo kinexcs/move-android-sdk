@@ -14,7 +14,7 @@ This SDK can be integrated into Android applications to administer desk-based ex
 
 
 ## Features
-Desk-based Exercises
+**Desk-based Exercises**
 
 Deskercise provides 3 exercise models for users to choose from, depending on the amount of time the user has for their workout
 
