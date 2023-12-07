@@ -18,21 +18,20 @@ Desk-based Exercises
 
 Deskercise provides 3 exercise models for users to choose from, depending on the amount of time the user has for their workout
 
-|                             | Exercise Program Models 
+(Numbers in brackets indicate order of exercises)
 
-(Numbers indicate order of exercises) |
-| --------------------------- | --------------------------------------------------------------- |
-| Exercise Name               | Exercise ID                                                     | 5 min | 10 min | 15 min |
-| Upper Trap Stretch          | 11                                                              | ✔ (1) | ✔ (1) | ✔ (1) |
-| Shoulder Shrug Stretch      | 8                                                               |  | ✔ (2) | ✔ (2) |
-| Neck Stretch                | 6                                                               |  | ✔ (3) | ✔ (3) |
-| Torso Stretch               | 7                                                               | ✔ (3) | ✔ (4) | ✔ (4) |
-| Overhead Shoulder Stretch   | 3                                                               |  | ✔ (5) | ✔ (5) |
-| Side Stretch                | 4                                                               | ✔ (2) | ✔ (6) | ✔ (6) |
-| Piriformis Stretch          | 12                                                              |  |  | ✔ (7) |
-| Overhead Tricep Stretch     | 2                                                               |  |  | ✔ (8) |
-| Horizontal Shoulder Stretch | 13                                                              |  |  | ✔ (9) |
-| Relaxation Breathing        | 14                                                              | ✔ (4) | ✔ (7) | ✔ (10) |
+| Exercise Name               | Exercise ID | 5 min | 10 min | 15 min |
+|-----------------------------|-------------|-------|--------|--------|
+| Upper Trap Stretch          | 11          | ✔ (1) | ✔ (1)  | ✔ (1)  |
+| Shoulder Shrug Stretch      | 8           |       | ✔ (2)  | ✔ (2)  |
+| Neck Stretch                | 6           |       | ✔ (3)  | ✔ (3)  |
+| Torso Stretch               | 7           | ✔ (3) | ✔ (4)  | ✔ (4)  |
+| Overhead Shoulder Stretch   | 3           |       | ✔ (5)  | ✔ (5)  |
+| Side Stretch                | 4           | ✔ (2) | ✔ (6)  | ✔ (6)  |
+| Piriformis Stretch          | 12          |       |        | ✔ (7)  |
+| Overhead Tricep Stretch     | 2           |       |        | ✔ (8)  |
+| Horizontal Shoulder Stretch | 13          |       |        | ✔ (9)  |
+| Relaxation Breathing        | 14          | ✔ (4) | ✔ (7)  | ✔ (10) |
 
 After the user selects the Exercise Program Model, the SDK will utilise a joint-detection machine-learning model to guide the user through the selected exercises.
 
