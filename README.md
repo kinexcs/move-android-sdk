@@ -94,13 +94,13 @@ class MyApplication : Application() {
 ```
 
 **Exercise Program Models**<br>
-1. To run the Exercise Program Models in your app, first declare an instance of MoveSDK
+Step 1. To run the Exercise Program Models in your app, first declare an instance of MoveSDK
 
 ```kotlin
 val moveSDK = MoveSDK()
 ```
 
-2. MoveSDK provides three Exercise Program Models as an Intent object for use. These are:
+Step 2. MoveSDK provides three Exercise Program Models as an Intent object for use. These are:
 
 ```kotlin
 // 5 minutes model
@@ -117,7 +117,7 @@ If `isRandom == true`, then the selection and order of the exercises will be ran
 
 If `isRandom == false`, then the order of the exercises will be as shown in [Features](#features)
 
-3. In your `Activity` or `Fragment` class, prepare an `ActivityResultLauncher` using the companion object `MoveSDK.handleResult()` as follows:
+Step 3. In your `Activity` or `Fragment` class, prepare an `ActivityResultLauncher` using the companion object `MoveSDK.handleResult()` as follows:
 
 ```kotlin
 private val launcher =
@@ -151,7 +151,7 @@ private val launcher =
 - `completedReps : Int` The number of repetitions completed for that exercise. If the exercise if not Skipped in the middle, then this number will be equal to `totalReps`
 - `totalReps : Int` The number of repetitions for that exercise if it was not Skipped in the middle
 
-4. Launch the `Intent` selected in Step 2 to start the exercise.
+Step 4. Launch the `Intent` selected in Step 2 to start the exercise.
 
 ```kotlin
 launcher.launch(moveSDK.getIntent5Minutes(this, true))
