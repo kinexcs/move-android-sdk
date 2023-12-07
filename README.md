@@ -70,7 +70,7 @@ dependencies {
 
 ### Integration
 
-**Initialization**
+**Initialization**<br>
 Step 1: In your `AndroidManifest.xml`, insert the `package-name` and `key` provided to you under `<meta-data>` in the `<application>` level. These will be provided to you separately to ensure SDK integrity.
 
 ```
@@ -93,7 +93,7 @@ class MyApplication : Application() {
 }
 ```
 
-**Exercise Program Models**
+**Exercise Program Models**<br>
 1. To run the Exercise Program Models in your app, first declare an instance of MoveSDK
 
 ```kotlin
