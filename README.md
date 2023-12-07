@@ -73,7 +73,7 @@ dependencies {
 **Initialization**<br>
 Step 1: In your `AndroidManifest.xml`, insert the `package-name` and `key` provided to you under `<meta-data>` in the `<application>` level. These will be provided to you separately to ensure SDK integrity.
 
-```
+```xml
 <application>
     <meta-data>
         android:name='<<package-name>>'
@@ -136,20 +136,20 @@ private val launcher =
 ```
 
 `SessionDetail` is a `data class` storing the full results of one exercise session. Its attributes are as follows:
-- `sessionId : String` \t An autonumber to uniquely identify each exercise session carried out
-- `programId : Int` \t An ID to identify the program models chosen. 
+- `sessionId : String` An autonumber to uniquely identify each exercise session carried out
+- `programId : Int` An ID to identify the program models chosen. 
   - `programId = 1` represents a 5 min program model
   - `programId = 2` represents a 10 min program model
   - `programId = 3` represents a 15 min program model
-- `createdAt : String` \t The timestamp when the exercise session is first created. This time is recorded when the `Intent` is launched by the user
+- `createdAt : String` The timestamp when the exercise session is first created. This time is recorded when the `Intent` is launched by the user
 - `exercises : List<Exercise>`
 
 `Exercise` is another `data class` storing the full results of one single exercise in an exercise session. Its attributes are as follows:
-- `exerciseId : Int` \t The unique identifier for each exercise. Refer to [Features](#features) for the name corresponding to the ID number
-- `countGood : Int` \t The number of good repetitions for that exercise
-- `countBad : Int` \t The number of bad repetitions for that exercise
-- `completedReps : Int` \t The number of repetitions completed for that exercise. If the exercise if not Skipped in the middle, then this number will be equal to `totalReps`
-- `totalReps : Int` \t The number of repetitions for that exercise if it was not Skipped in the middle
+- `exerciseId : Int` The unique identifier for each exercise. Refer to [Features](#features) for the name corresponding to the ID number
+- `countGood : Int` The number of good repetitions for that exercise
+- `countBad : Int` The number of bad repetitions for that exercise
+- `completedReps : Int` The number of repetitions completed for that exercise. If the exercise if not Skipped in the middle, then this number will be equal to `totalReps`
+- `totalReps : Int` The number of repetitions for that exercise if it was not Skipped in the middle
 
 4. Launch the `Intent` selected in Step 2 to start the exercise.
 
