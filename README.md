@@ -134,6 +134,8 @@ private val launcher =
    }
 ```
 
+**Session Detail**
+
 `SessionDetail` is a `data class` storing the full results of one exercise session. Its attributes are as follows:
 - `sessionId : String` An autonumber to uniquely identify each exercise session carried out
 - `programId : Int` An ID to identify the program models chosen. 
@@ -142,6 +144,8 @@ private val launcher =
   - `programId = 3` represents a 15 min program model
 - `createdAt : String` The timestamp when the exercise session is first created. This time is recorded when the `Intent` is launched by the user
 - `exercises : List<Exercise>`
+
+**Exercise**
 
 `Exercise` is another `data class` storing the full results of one single exercise in an exercise session. Its attributes are as follows:
 - `exerciseId : Int` The unique identifier for each exercise. Refer to [Features](#features) for the name corresponding to the ID number
