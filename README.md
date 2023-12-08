@@ -57,7 +57,7 @@ buildscript {
 }
 ```
 
-Step 2: Add `move-sdk` to your app-level `build-gradle` dependencies
+Step 2: Add `move-sdk` to your app-level `build-gradle` dependencies. The latest `<version>` is 0.0.9
 
 ```
 dependencies {
@@ -137,12 +137,12 @@ private val launcher =
 **Session Detail**
 
 `SessionDetail` is a `data class` storing the full results of one exercise session. Its attributes are as follows:
-- `sessionId : String` An autonumber to uniquely identify each exercise session carried out
+- `sessionId : String` A UUID to uniquely identify each exercise session
 - `programId : Int` An ID to identify the program models chosen. 
   - `programId = 1` represents a 5 min program model
   - `programId = 2` represents a 10 min program model
   - `programId = 3` represents a 15 min program model
-- `createdAt : String` The timestamp when the exercise session is first created. This time is recorded when the `Intent` is launched by the user
+- `createdAt : String` The timestamp when the exercise session is first created. This time is recorded when the `Intent` is launched by the user. The time is converted from the user's timezone and displayed using `YYYY-MM-DD HH:MM:SS` format in UTC+0
 - `exercises : List<Exercise>`
 
 **Exercise**
