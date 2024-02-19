@@ -75,7 +75,7 @@ Step 1: In your `AndroidManifest.xml`, insert the `package-name` and `key` provi
 ```xml
 <application>
     <meta-data>
-        android:name='<<package-name>>'
+        android:name='com.kinexcs.move'
         android:value='<<key>>'
     </meta-data>
 </application>
